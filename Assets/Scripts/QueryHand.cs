@@ -8,8 +8,9 @@ public class QueryHand : MonoBehaviour
 
     public InteractionManager intManager;
     public GameObject LeftHand;
-    public InteractionBehaviour[] InteractionObjects;
     public float hoverDistance = 0.1f;
+    public InteractionBehaviour[] InteractionObjects;
+   
     private SerialWrapper serial;
 
 

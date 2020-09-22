@@ -12,10 +12,10 @@ public class SerialWrapper : MonoBehaviour
     #endregion
 
     #region SettersAndGetters
-    public int SurfaceType { get => surfaceType; set => surfaceType = value; }
     public int IsHandGrap { get => isHandGrasp; set => isHandGrasp = value; }
     public int IsHandActive { get => isHandActive; set => isHandActive = value; }
     public int IndexContact { get => indexContact; set => indexContact = value; }
+    public int SurfaceType { get => surfaceType; set => surfaceType = value; }
     public int ObjectTemp { get => objectTemp; set => objectTemp = value; }
     #endregion
 
