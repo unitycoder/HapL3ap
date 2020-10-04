@@ -33,7 +33,7 @@ public class SerialCOM : MonoBehaviour
         for (int i = 0; i < t; i++)
         {
             // from all porst get the port that Contains string COM (which means the 1st available port)
-            if (portNames[i].Contains("COM") && !portNames[i].Contains("3"))
+            if (portNames[i].Contains("COM") && !portNames[i].Contains("6"))
             {
 
                 if (CheckPort("\\\\.\\" + portNames[i]))
