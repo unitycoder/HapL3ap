@@ -1556,7 +1556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   temp: 25
-  mat: 122
+  mat: 111
 --- !u!114 &1292396481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,7 +3036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 434b0b761d9abeb4cab1d3088ce0763d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baudRate: 38400
+  baudRate: 9600
 --- !u!4 &1877681089
 Transform:
   m_ObjectHideFlags: 0

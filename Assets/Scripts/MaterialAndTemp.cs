@@ -20,7 +20,6 @@ public class MaterialAndTemp : MonoBehaviour
         InitPos = transform.position;
         InitRot = transform.rotation;
         rigidbody = GetComponent<Rigidbody>();
-
     }
 
     private void FixedUpdate()

@@ -12,7 +12,7 @@ public class SerialCOM : MonoBehaviour
     private int t;
     private Thread _thread;
     private bool foundPort;
-    public  int baudRate = 115200;
+    public  int baudRate = 9600;
     public static string input;
 
     void Awake()
@@ -33,7 +33,7 @@ public class SerialCOM : MonoBehaviour
         for (int i = 0; i < t; i++)
         {
             // from all porst get the port that Contains string COM (which means the 1st available port)
-            if (portNames[i].Contains("COM") && !portNames[i].Contains("6"))
+            if (portNames[i].Contains("COM"))
             {
 
                 if (CheckPort("\\\\.\\" + portNames[i]))
@@ -50,8 +50,8 @@ public class SerialCOM : MonoBehaviour
             if (serial.IsOpen)
             {
 
-              //  _thread = new Thread(ThreadedWork);
-              //  _thread.Start();
+                _thread = new Thread(ThreadedWork);
+                _thread.Start();
 
             }
         }
@@ -71,6 +71,9 @@ public class SerialCOM : MonoBehaviour
                 serial.DiscardOutBuffer();
                 serial.DiscardInBuffer();
                 input = buf;
+
+                print(buf);
+
                 // use Split to split your input string into string array
               //  string[] splitString = buf.Split('\t');
 

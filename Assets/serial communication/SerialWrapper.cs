@@ -33,6 +33,8 @@ public class SerialWrapper : MonoBehaviour
     void Update()
     {
        SerialCOM.Write(IsHandActive + ":" + isHandGrasp + ":"+indexContact+":"+objectTemp+":"+surfaceType+":");
+
+        print(IsHandActive + ":" + isHandGrasp + ":" + indexContact + ":" + objectTemp + ":" + surfaceType);
     }
 
 
